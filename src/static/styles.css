@@ -142,3 +142,84 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+.participants-list li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+/* Chess Club */
+.participants-list.chess-club li::before {
+  content: "\265F "; /* ♟️ */
+  position: absolute;
+  left: 0;
+  color: #222;
+}
+/* Programming Class */
+.participants-list.programming-class li::before {
+  content: "\1F4BB "; /* 💻 */
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+}
+/* Gym Class */
+.participants-list.gym-class li::before {
+  content: "\1F3CB "; /* 🏋️ */
+  position: absolute;
+  left: 0;
+  color: #43a047;
+}
+/* Soccer Team */
+.participants-list.soccer-team li::before {
+  content: "\26BD "; /* ⚽ */
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+/* Basketball Club */
+.participants-list-basketball-club li::before {
+  content: "\1F3C0 "; /* 🏀 */
+  position: absolute;
+  left: 0;
+  color: #ff9800;
+}
+/* Art Club */
+.participants-list-art-club li::before {
+  content: "\1F3A8 "; /* 🎨 */
+  position: absolute;
+  left: 0;
+  color: #8e24aa;
+}
+/* Drama Society */
+.participants-list-drama-society li::before {
+  content: "\1F3AD "; /* 🎭 */
+  position: absolute;
+  left: 0;
+  color: #c62828;
+}
+/* Math Olympiad */
+.participants-list-math-olympiad li::before {
+  content: "\2797 "; /* ➗ (using a division sign alternative) */
+  position: absolute;
+  left: 0;
+  color: #1565c0;
+}
+/* Science Club */
+.participants-list-science-club li::before {
+  content: "\1F52C "; /* 🔬 */
+  position: absolute;
+  left: 0;
+  color: #0097a7;
+}
+/* No participants styling */
+.participants-list.no-participants {
+  color: #aaa;
+  font-style: italic;
+  padding-left: 0;
+}
